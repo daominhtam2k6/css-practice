@@ -1,8 +1,4 @@
-﻿/* ==========================================================
-   THUC HANH DANH SACH TRONG CSS
-========================================================== */
-
-body {
+﻿body {
     font-family: Arial, sans-serif;
     background-color: #f4f6f8;
     color: #1f2937;
@@ -77,6 +73,7 @@ h2 {
     display: flex;
     gap: 30px;
 }
+
 
 .position-demo > div {
     width: 50%;
