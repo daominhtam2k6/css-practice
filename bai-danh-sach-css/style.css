@@ -1,0 +1,169 @@
+﻿/* ==========================================================
+   THUC HANH DANH SACH TRONG CSS
+========================================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #1f2937;
+    margin: 0;
+    padding: 30px;
+}
+
+
+.container {
+    max-width: 850px;
+    margin: auto;
+}
+
+
+h1 {
+    text-align: center;
+    color: #1d4ed8;
+    margin-bottom: 35px;
+}
+
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+h2 {
+    color: #1e3a8a;
+}
+
+
+/* ==========================================================
+   1. LIST-STYLE-TYPE
+========================================================== */
+
+.subject-list {
+    list-style-type: square;
+}
+
+
+/* ==========================================================
+   2. DANH SACH SO LA MA
+========================================================== */
+
+.roman-list {
+    list-style-type: upper-roman;
+}
+
+
+/* ==========================================================
+   3. LIST-STYLE-IMAGE
+========================================================== */
+
+.tool-list {
+    list-style-image: url("bullet.svg");
+}
+
+.tool-list li {
+    margin: 8px 0;
+}
+
+
+/* ==========================================================
+   4. LIST-STYLE-POSITION
+========================================================== */
+
+.position-demo {
+    display: flex;
+    gap: 30px;
+}
+
+.position-demo > div {
+    width: 50%;
+    background-color: #eff6ff;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+
+.outside-list {
+    list-style-position: outside;
+}
+
+
+.inside-list {
+    list-style-position: inside;
+}
+
+
+/* ==========================================================
+   5. LIST-STYLE RUT GON
+========================================================== */
+
+.short-list {
+    list-style: square inside;
+    background-color: #f8fafc;
+    padding: 15px;
+}
+
+
+/* ==========================================================
+   6. MAU SAC + KHOANG CACH
+========================================================== */
+
+.color-list {
+    background-color: #dbeafe;
+    padding: 25px 45px;
+    border-radius: 8px;
+}
+
+
+.color-list li {
+    color: #1d4ed8;
+    background-color: white;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+
+/* ==========================================================
+   7. BAI TONG HOP
+========================================================== */
+
+.roadmap {
+    list-style: upper-roman inside;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+
+.roadmap li {
+    background-color: #3b82f6;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .position-demo {
+        display: block;
+    }
+
+    .position-demo > div {
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+}
