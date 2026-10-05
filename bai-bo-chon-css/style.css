@@ -1,0 +1,177 @@
+﻿/* ==========================================================
+   1. ELEMENT SELECTOR
+   Ap dung cho tat ca phan tu body
+========================================================== */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f1f5f9;
+
+    color: #1f2937;
+
+    margin: 0;
+
+    padding: 30px;
+}
+
+
+/* ==========================================================
+   CLASS SELECTOR
+========================================================== */
+
+.container {
+    max-width: 750px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==========================================================
+   2. ID SELECTOR
+========================================================== */
+
+#main-title {
+    text-align: center;
+
+    color: #1d4ed8;
+
+    border-bottom: 3px solid #1d4ed8;
+
+    padding-bottom: 15px;
+}
+
+
+/* ==========================================================
+   3. CLASS SELECTOR
+========================================================== */
+
+.intro {
+    background-color: #eff6ff;
+
+    padding: 15px;
+
+    border-left: 5px solid #2563eb;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================================
+   4. ELEMENT SELECTOR
+========================================================== */
+
+ul {
+    list-style-type: square;
+
+    padding-left: 40px;
+}
+
+
+/* ==========================================================
+   CLASS SELECTOR CHO TUNG SO THICH
+========================================================== */
+
+.hobby {
+    padding: 8px;
+
+    margin: 8px 0;
+
+    font-weight: bold;
+}
+
+
+.hobby-1 {
+    color: #dc2626;
+}
+
+
+.hobby-2 {
+    color: #16a34a;
+}
+
+
+.hobby-3 {
+    color: #7c3aed;
+}
+
+
+/* ==========================================================
+   5. GROUPING SELECTOR
+   Ap dung cung luc cho h1 va h2
+========================================================== */
+
+h1,
+h2 {
+    font-family: Georgia, serif;
+}
+
+
+/* ==========================================================
+   DINH DANG BUTTON
+========================================================== */
+
+#action-button {
+    background-color: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 22px;
+
+    font-size: 16px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    margin-top: 15px;
+}
+
+
+/* ==========================================================
+   6. PSEUDO-CLASS :hover
+========================================================== */
+
+#action-button:hover {
+    background-color: #1e40af;
+
+    transform: scale(1.05);
+}
+
+
+/* ==========================================================
+   THEM PSEUDO-CLASS CHO DANH SACH
+========================================================== */
+
+.hobby:hover {
+    background-color: #f8fafc;
+
+    padding-left: 15px;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+}
