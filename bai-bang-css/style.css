@@ -1,0 +1,222 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #1f2937;
+    margin: 0;
+    padding: 30px;
+}
+
+
+.container {
+    max-width: 950px;
+    margin: auto;
+}
+
+
+h1 {
+    text-align: center;
+    color: #1d4ed8;
+    margin-bottom: 35px;
+}
+
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+h2 {
+    color: #1e3a8a;
+}
+
+
+/* ==========================================================
+   1. BORDER
+========================================================== */
+
+.table-border,
+.table-border th,
+.table-border td {
+    border: 1px solid black;
+}
+
+
+/* ==========================================================
+   2. BORDER COLLAPSE
+========================================================== */
+
+.table-collapse {
+    border-collapse: collapse;
+}
+
+.table-collapse,
+.table-collapse th,
+.table-collapse td {
+    border: 1px solid black;
+}
+
+
+/* ==========================================================
+   3. WIDTH + HEIGHT
+========================================================== */
+
+.table-size {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-size,
+.table-size th,
+.table-size td {
+    border: 1px solid black;
+}
+
+.table-size th {
+    height: 50px;
+}
+
+
+/* ==========================================================
+   4. TEXT ALIGN
+========================================================== */
+
+.table-horizontal {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-horizontal,
+.table-horizontal th,
+.table-horizontal td {
+    border: 1px solid black;
+}
+
+.table-horizontal th {
+    text-align: left;
+}
+
+
+/* ==========================================================
+   5. VERTICAL ALIGN
+========================================================== */
+
+.table-vertical {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-vertical,
+.table-vertical th,
+.table-vertical td {
+    border: 1px solid black;
+}
+
+.table-vertical td {
+    height: 80px;
+    vertical-align: bottom;
+}
+
+
+/* ==========================================================
+   6. PADDING
+========================================================== */
+
+.table-padding {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-padding,
+.table-padding th,
+.table-padding td {
+    border: 1px solid black;
+}
+
+.table-padding th,
+.table-padding td {
+    padding: 15px;
+}
+
+
+/* ==========================================================
+   7. COLOR
+========================================================== */
+
+.table-color {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-color,
+.table-color th,
+.table-color td {
+    border: 1px solid black;
+}
+
+.table-color th {
+    background-color: #333;
+    color: white;
+    padding: 12px;
+}
+
+.table-color td {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 12px;
+}
+
+
+/* ==========================================================
+   8. BAI TONG HOP
+========================================================== */
+
+.final-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.final-table th,
+.final-table td {
+    border: 1px solid #cbd5e1;
+    padding: 14px;
+}
+
+.final-table th {
+    height: 50px;
+    text-align: left;
+    background-color: #1d4ed8;
+    color: white;
+}
+
+.final-table td {
+    vertical-align: middle;
+}
+
+.final-table tr:nth-child(even) {
+    background-color: #eff6ff;
+}
+
+.final-table tr:hover {
+    background-color: #dbeafe;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    section {
+        overflow-x: auto;
+    }
+
+}
