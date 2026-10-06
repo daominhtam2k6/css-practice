@@ -1,0 +1,68 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    margin: 0;
+    padding: 30px;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+.card {
+    width: 280px;
+    height: 150px;
+
+    padding: 20px;
+
+    border: 5px solid #3498db;
+
+    margin: 20px;
+
+    color: #222;
+}
+
+
+/* CARD 1 - CONTENT BOX */
+
+.card:nth-child(1) {
+    box-sizing: content-box;
+    background-color: #2ecc71;
+}
+
+
+/* CARD 2 - BORDER BOX */
+
+.card:nth-child(2) {
+    box-sizing: border-box;
+    background-color: #f1c40f;
+}
+
+
+/* CARD 3 - BORDER BOX */
+
+.card:nth-child(3) {
+    box-sizing: border-box;
+    background-color: #e74c3c;
+}
+
+
+.card h2 {
+    margin-top: 0;
+}
+
+
+.card p {
+    line-height: 1.5;
+}
