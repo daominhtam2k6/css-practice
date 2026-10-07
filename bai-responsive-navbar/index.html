@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Navbar</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            MyWebsite
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#services">Dịch vụ</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+
+        <button
+            class="menu-icon"
+            type="button"
+            aria-label="Mở menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+    </nav>
+
+    <main>
+
+        <section id="home">
+            <h1>Responsive Navbar</h1>
+
+            <p>
+                Thu nhỏ cửa sổ trình duyệt xuống dưới
+                768px để kiểm tra menu trên mobile.
+            </p>
+        </section>
+
+        <section id="about">
+            <h2>Giới thiệu</h2>
+
+            <p>
+                Thanh điều hướng sử dụng Flexbox,
+                Media Queries và JavaScript.
+            </p>
+        </section>
+
+        <section id="services">
+            <h2>Dịch vụ</h2>
+
+            <p>
+                Trên desktop menu hiển thị theo hàng ngang.
+            </p>
+
+            <p>
+                Trên mobile menu được ẩn và thay thế
+                bằng biểu tượng ☰.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Liên hệ</h2>
+
+            <p>Email: contact@example.com</p>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
