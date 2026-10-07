@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Bố cục với display</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="home">
+        <h1>Bố cục trang web với display</h1>
+        <p>Thực hành CSS display: block và inline-block</p>
+    </header>
+
+    <nav>
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#services">Dịch vụ</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <main>
+        <section class="content">
+
+            <div class="box" id="about">
+                <h2>Cột 1</h2>
+                <p>Giới thiệu</p>
+                <p>
+                    Đây là cột thứ nhất của trang web,
+                    được định dạng bằng inline-block.
+                </p>
+            </div>
+
+            <div class="box" id="services">
+                <h2>Cột 2</h2>
+                <p>Dịch vụ</p>
+                <p>
+                    Đây là cột thứ hai. Các cột được
+                    hiển thị cạnh nhau trên màn hình lớn.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>Cột 3</h2>
+                <p>Thông tin</p>
+                <p>
+                    Đây là cột thứ ba. Bố cục sử dụng
+                    width, max-width và display.
+                </p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>Bản quyền &copy; 2026 - CSS Practice</p>
+    </footer>
+
+</body>
+</html>

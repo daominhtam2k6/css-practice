@@ -1,0 +1,127 @@
+﻿/* DINH DANG CHUNG */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f7fb;
+    color: #263247;
+}
+
+
+/* HEADER */
+
+header {
+    display: block;
+    padding: 35px 15px;
+    background-color: #2563eb;
+    color: white;
+}
+
+header h1 {
+    margin: 0 0 12px;
+}
+
+header p {
+    margin: 0;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    display: block;
+    background-color: #e2e8f0;
+    padding: 12px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* NOI DUNG CHINH */
+
+main {
+    display: block;
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.content {
+    display: block;
+    font-size: 0;
+}
+
+
+/* BA COT INLINE-BLOCK */
+
+.box {
+    display: inline-block;
+    width: 30%;
+    max-width: 350px;
+    min-height: 220px;
+    padding: 20px;
+    margin: 1%;
+    background-color: lightblue;
+    border: 2px solid #60a5fa;
+    border-radius: 8px;
+    vertical-align: top;
+    font-size: 16px;
+    text-align: left;
+}
+
+.box h2 {
+    margin-top: 0;
+    color: #1e40af;
+}
+
+.box p {
+    line-height: 1.6;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: block;
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #1e293b;
+    color: white;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .box {
+        display: block;
+        width: 95%;
+        max-width: none;
+        min-height: auto;
+        margin: 15px auto;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+}
