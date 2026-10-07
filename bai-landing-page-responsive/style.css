@@ -1,0 +1,554 @@
+﻿/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #ffffff;
+    color: #1e293b;
+
+    overflow-x: hidden;
+}
+
+/* =========================================================
+   HEADER - FLEXBOX
+========================================================= */
+
+.header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 70px;
+
+    padding: 15px 6%;
+
+    background-color: #111827;
+    color: white;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav ul {
+    display: flex;
+
+    gap: 30px;
+
+    list-style: none;
+}
+
+.nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+.nav a:hover {
+    color: #60a5fa;
+}
+
+/* =========================================================
+   HERO - FLEXBOX
+========================================================= */
+
+.hero {
+    min-height: 520px;
+
+    padding: 80px 8%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff,
+            #eef2ff
+        );
+}
+
+.hero-content {
+    flex: 1;
+
+    max-width: 650px;
+}
+
+.hero-label {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: #2563eb;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+
+    font-size: clamp(36px, 5vw, 60px);
+
+    line-height: 1.1;
+
+    color: #172554;
+}
+
+.hero-content p {
+    max-width: 600px;
+
+    margin-bottom: 30px;
+
+    color: #64748b;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    background-color: #2563eb;
+    color: white;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+/* HERO CARD */
+
+.hero-card {
+    flex: 0 1 380px;
+
+    padding: 45px 35px;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 50px rgba(30, 64, 175, 0.15);
+
+    text-align: center;
+}
+
+.hero-icon {
+    font-size: 65px;
+
+    margin-bottom: 20px;
+}
+
+.hero-card h2 {
+    margin-bottom: 15px;
+
+    color: #1e3a8a;
+}
+
+.hero-card p {
+    color: #64748b;
+
+    line-height: 1.7;
+}
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.section-title {
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+
+    text-align: center;
+}
+
+.section-title span {
+    color: #2563eb;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.section-title h2 {
+    margin: 10px 0 12px;
+
+    font-size: 34px;
+
+    color: #172554;
+}
+
+.section-title p {
+    color: #64748b;
+
+    line-height: 1.7;
+}
+
+/* =========================================================
+   SERVICES - FLEXBOX
+========================================================= */
+
+.services {
+    padding: 80px 8%;
+}
+
+.service-container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.service {
+    flex: 1;
+
+    min-width: 250px;
+    max-width: 370px;
+
+    padding: 35px 25px;
+
+    background-color: #eff6ff;
+
+    border: 1px solid #dbeafe;
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.service-icon {
+    margin-bottom: 20px;
+
+    font-size: 45px;
+}
+
+.service h3 {
+    margin-bottom: 15px;
+
+    color: #1e40af;
+}
+
+.service p {
+    color: #64748b;
+
+    line-height: 1.7;
+}
+
+/* =========================================================
+   BENEFITS - CSS GRID
+========================================================= */
+
+.benefits {
+    padding: 80px 8%;
+
+    background-color: #f8fafc;
+}
+
+.benefit-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+.benefit {
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.benefit strong {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #2563eb;
+
+    font-size: 27px;
+}
+
+.benefit h3 {
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    color: #64748b;
+
+    line-height: 1.7;
+}
+
+/* =========================================================
+   TESTIMONIAL
+========================================================= */
+
+.testimonials {
+    padding: 80px 8%;
+
+    background-color: #e2e8f0;
+}
+
+.testimonial-container {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+.testimonial {
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+.testimonial p {
+    margin-bottom: 20px;
+
+    line-height: 1.8;
+
+    color: #475569;
+}
+
+.testimonial footer {
+    color: #1d4ed8;
+
+    font-weight: bold;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta {
+    padding: 80px 20px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 15px;
+
+    font-size: 34px;
+}
+
+.cta p {
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.7;
+}
+
+.btn-light {
+    background-color: white;
+
+    color: #1d4ed8;
+}
+
+.btn-light:hover {
+    background-color: #eff6ff;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    padding: 25px;
+
+    background-color: #111827;
+
+    color: #cbd5e1;
+
+    text-align: center;
+}
+
+/* =========================================================
+   RESPONSIVE TABLET + MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    .header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    .nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px 20px;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+
+        flex-direction: column;
+
+        padding: 60px 20px;
+
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 450px;
+
+        flex: auto;
+    }
+
+    /* SERVICES */
+
+    .services,
+    .benefits,
+    .testimonials {
+        padding: 60px 20px;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .service {
+        width: 100%;
+        max-width: none;
+    }
+
+    /* GRID -> 1 COLUMN */
+
+    .benefit-grid,
+    .testimonial-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================================
+   MOBILE NHO
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .header {
+        align-items: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .hero {
+        padding: 45px 15px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-card {
+        padding: 30px 20px;
+    }
+
+    .section-title h2,
+    .cta h2 {
+        font-size: 28px;
+    }
+
+    .services,
+    .benefits,
+    .testimonials {
+        padding:
+            50px 15px;
+    }
+
+}
