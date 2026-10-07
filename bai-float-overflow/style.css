@@ -1,0 +1,105 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f6f8;
+    color: #263247;
+}
+
+h1 {
+    text-align: center;
+    color: #1d4ed8;
+    margin-bottom: 30px;
+}
+
+/* CONTAINER CHUA HAI COT */
+
+.container {
+    width: 100%;
+    overflow: hidden;
+
+    border: 2px solid #64748b;
+    margin-bottom: 30px;
+}
+
+/* COT TRAI */
+
+.left-column {
+    width: 50%;
+    float: left;
+
+    background-color: lightgray;
+    padding: 20px;
+
+    min-height: 180px;
+}
+
+/* COT PHAI */
+
+.right-column {
+    width: 50%;
+    float: right;
+
+    background-color: lightgreen;
+    padding: 20px;
+
+    min-height: 180px;
+}
+
+.left-column h2,
+.right-column h2 {
+    margin-top: 0;
+}
+
+/* KHU VUC OVERFLOW */
+
+.overflow-section {
+    clear: both;
+
+    margin-top: 20px;
+}
+
+.overflow-section h2 {
+    color: #be123c;
+}
+
+/* NOI DUNG BI TRAN */
+
+.overflow-box {
+    width: 300px;
+    height: 100px;
+
+    background-color: lightcoral;
+
+    padding: 10px;
+
+    overflow: auto;
+
+    border: 2px solid #ef4444;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        float: none;
+        min-height: auto;
+    }
+
+    .overflow-box {
+        width: 100%;
+    }
+}
