@@ -1,0 +1,112 @@
+﻿/* DINH DANG CHUNG */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 30px;
+    color: #243047;
+}
+
+h1 {
+    text-align: center;
+    color: #1d4ed8;
+    margin-bottom: 30px;
+}
+
+
+/* CONTAINER */
+
+.container {
+    width: 100%;
+    border: 2px solid #64748b;
+    padding: 10px;
+}
+
+
+/* COT TRAI - 60% */
+
+.left-column {
+    width: 60%;
+    float: left;
+
+    background-color: lightblue;
+    padding: 20px;
+
+    box-sizing: border-box;
+    min-height: 300px;
+}
+
+
+/* COT PHAI - 38% */
+
+.right-column {
+    width: 38%;
+    float: right;
+
+    background-color: lightgreen;
+    padding: 20px;
+
+    box-sizing: border-box;
+    min-height: 300px;
+}
+
+
+/* XU LY FLOAT BANG CLEARFIX */
+
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* NOI DUNG TRONG CAC COT */
+
+.left-column h2,
+.right-column h2 {
+    margin-top: 0;
+}
+
+.left-column p,
+.right-column p {
+    line-height: 1.7;
+}
+
+.right-column li {
+    margin-bottom: 10px;
+}
+
+
+/* NOI DUNG BEN DUOI */
+
+.footer {
+    margin-top: 25px;
+    padding: 20px;
+
+    background-color: #dbeafe;
+    border: 1px solid #93c5fd;
+    border-radius: 6px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .left-column,
+    .right-column {
+        float: none;
+        width: 100%;
+        min-height: auto;
+        margin-bottom: 15px;
+    }
+}

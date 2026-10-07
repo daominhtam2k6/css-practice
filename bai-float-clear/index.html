@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Bố cục bằng Float và Clear</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Thực hành Float và Clear trong CSS</h1>
+
+    <div class="container">
+
+        <!-- COT BEN TRAI -->
+        <div class="left-column">
+
+            <h2>Nội dung chính</h2>
+
+            <p>
+                Đây là cột bên trái, chiếm 60% chiều rộng
+                của phần tử container.
+            </p>
+
+            <p>
+                Cột này sử dụng thuộc tính
+                <strong>float: left</strong>.
+            </p>
+
+            <p>
+                Nội dung chính có thể chứa bài viết,
+                hình ảnh hoặc các thông tin quan trọng.
+            </p>
+
+        </div>
+
+
+        <!-- COT BEN PHAI -->
+        <div class="right-column">
+
+            <h2>Sidebar</h2>
+
+            <p>
+                Đây là cột bên phải, chiếm 38%
+                chiều rộng của container.
+            </p>
+
+            <p>
+                Cột này sử dụng thuộc tính
+                <strong>float: right</strong>.
+            </p>
+
+            <ul>
+                <li>Trang chủ</li>
+                <li>Giới thiệu</li>
+                <li>Dịch vụ</li>
+                <li>Liên hệ</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- NOI DUNG SAU CONTAINER -->
+    <div class="footer">
+
+        <p>
+            Đây là nội dung nằm bên dưới hai cột.
+            Container đã được xử lý bằng clear: both.
+        </p>
+
+    </div>
+
+</body>
+
+</html>
