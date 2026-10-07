@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CSS flex-basis Property</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>CSS flex-basis Property</h1>
+
+    <p class="intro">
+        Thực hành kích thước cơ sở ban đầu của Flex Item
+        bằng thuộc tính flex-basis.
+    </p>
+
+    <!-- ====================================================
+         VI DU 1: PX
+    ===================================================== -->
+
+    <section>
+
+        <h2>Ví dụ 1: flex-basis với px</h2>
+
+        <p class="code-note">
+            Item 1: 200px
+            Item 2: 100px
+            Item 3: 150px
+        </p>
+
+        <div class="container example-px">
+
+            <div class="item item1">
+                Item 1<br>200px
+            </div>
+
+            <div class="item item2">
+                Item 2<br>100px
+            </div>
+
+            <div class="item item3">
+                Item 3<br>150px
+            </div>
+
+        </div>
+
+        <p class="explanation">
+            Vì flex-direction mặc định là row nên flex-basis
+            tác động theo chiều ngang.
+        </p>
+
+    </section>
+
+    <!-- ====================================================
+         VI DU 2: COLUMN
+    ===================================================== -->
+
+    <section>
+
+        <h2>Ví dụ 2: flex-basis với flex-direction: column</h2>
+
+        <p class="code-note">
+            flex-direction: column;
+            flex-basis: 100px;
+        </p>
+
+        <div class="container example-column">
+
+            <div class="item">Item 1 - 100px</div>
+            <div class="item">Item 2 - 100px</div>
+            <div class="item">Item 3 - 100px</div>
+
+        </div>
+
+        <p class="explanation">
+            Khi flex-direction là column, main axis chuyển
+            sang chiều dọc nên flex-basis xác định chiều cao cơ sở.
+        </p>
+
+    </section>
+
+    <!-- ====================================================
+         VI DU 3: PERCENTAGE
+    ===================================================== -->
+
+    <section>
+
+        <h2>Ví dụ 3: flex-basis với %</h2>
+
+        <p class="code-note">
+            flex-basis: 50%;
+        </p>
+
+        <div class="container example-percent">
+
+            <div class="item">Item 1 - 50%</div>
+            <div class="item">Item 2 - 50%</div>
+
+        </div>
+
+        <p class="explanation">
+            Mỗi Item có kích thước cơ sở bằng 50%
+            theo main axis của Flex Container.
+        </p>
+
+    </section>
+
+    <!-- ====================================================
+         VI DU 4: FLEX-GROW
+    ===================================================== -->
+
+    <section>
+
+        <h2>Ví dụ 4: flex-basis kết hợp flex-grow</h2>
+
+        <p class="code-note">
+            flex-basis: 100px;
+            grow = 1 : 2 : 1
+        </p>
+
+        <div class="container example-grow">
+
+            <div class="item item1">
+                Item 1<br>grow 1
+            </div>
+
+            <div class="item item2">
+                Item 2<br>grow 2
+            </div>
+
+            <div class="item item3">
+                Item 3<br>grow 1
+            </div>
+
+        </div>
+
+        <p class="explanation">
+            Ban đầu mỗi Item có flex-basis 100px.
+            Không gian còn lại được chia theo tỷ lệ 1 : 2 : 1.
+        </p>
+
+    </section>
+
+    <!-- ====================================================
+         VI DU 5: AUTO
+    ===================================================== -->
+
+    <section>
+
+        <h2>Ví dụ 5: flex-basis: auto</h2>
+
+        <p class="code-note">
+            width: 200px;
+            flex-basis: auto;
+        </p>
+
+        <div class="container example-auto">
+
+            <div class="item auto-item">
+                flex-basis: auto
+            </div>
+
+            <div class="item">
+                Item khác
+            </div>
+
+        </div>
+
+        <p class="explanation">
+            Với flex-direction: row, auto có thể sử dụng
+            width: 200px làm kích thước cơ sở.
+        </p>
+
+    </section>
+
+</body>
+
+</html>

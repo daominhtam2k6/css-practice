@@ -1,0 +1,212 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f6f8;
+    color: #263247;
+}
+
+h1 {
+    text-align: center;
+
+    color: #1d4ed8;
+
+    margin-bottom: 10px;
+}
+
+.intro {
+    max-width: 800px;
+
+    margin: 0 auto 30px;
+
+    text-align: center;
+
+    color: #64748b;
+
+    line-height: 1.7;
+}
+
+section {
+    max-width: 950px;
+
+    margin: 0 auto 35px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border: 1px solid #dbe1ea;
+
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-top: 0;
+
+    color: #1e40af;
+}
+
+.code-note {
+    margin-bottom: 20px;
+
+    padding: 12px;
+
+    background-color: #eff6ff;
+
+    border-left: 4px solid #2563eb;
+
+    font-family: Consolas, monospace;
+
+    white-space: pre-line;
+}
+
+.explanation {
+    margin-top: 15px;
+
+    color: #64748b;
+
+    line-height: 1.7;
+}
+
+/* ==========================================================
+   FLEX CHUNG
+========================================================== */
+
+.container {
+    display: flex;
+
+    gap: 10px;
+
+    padding: 10px;
+
+    background-color: #e2e8f0;
+
+    border: 2px solid #334155;
+
+    border-radius: 6px;
+}
+
+.item {
+    padding: 20px;
+
+    background-color: lightblue;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+}
+
+/* ==========================================================
+   VI DU 1: PX
+========================================================== */
+
+.example-px .item1 {
+    flex-basis: 200px;
+}
+
+.example-px .item2 {
+    flex-basis: 100px;
+}
+
+.example-px .item3 {
+    flex-basis: 150px;
+}
+
+/* ==========================================================
+   VI DU 2: COLUMN
+========================================================== */
+
+.example-column {
+    flex-direction: column;
+
+    height: 500px;
+}
+
+.example-column .item {
+    flex-basis: 100px;
+
+    background-color: lightgreen;
+}
+
+/* ==========================================================
+   VI DU 3: PERCENT
+========================================================== */
+
+.example-percent .item {
+    flex-basis: 50%;
+
+    background-color: lightcoral;
+}
+
+/* ==========================================================
+   VI DU 4: FLEX-GROW
+========================================================== */
+
+.example-grow {
+    width: 600px;
+}
+
+.example-grow .item1 {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.example-grow .item2 {
+    flex-basis: 100px;
+    flex-grow: 2;
+
+    background-color: lightskyblue;
+}
+
+.example-grow .item3 {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+/* ==========================================================
+   VI DU 5: AUTO
+========================================================== */
+
+.example-auto .auto-item {
+    width: 200px;
+
+    flex-basis: auto;
+
+    background-color: lightyellow;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .example-px,
+    .example-percent,
+    .example-grow,
+    .example-auto {
+        overflow-x: auto;
+    }
+
+    .example-grow {
+        width: 100%;
+        min-width: 500px;
+    }
+
+}
