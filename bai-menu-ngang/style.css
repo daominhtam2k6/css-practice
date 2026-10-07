@@ -1,0 +1,181 @@
+﻿/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0 15px;
+    color: #1e40af;
+}
+
+body > p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* ==========================================================
+   MENU CHINH
+========================================================== */
+
+#menu {
+    background-color: #333;
+    border-bottom: 3px solid #222;
+    min-height: 50px;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sắp xếp các mục menu chính theo hàng ngang */
+
+#menu > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* ==========================================================
+   MENU ITEMS
+========================================================== */
+
+#menu ul li {
+    position: relative;
+    list-style: none;
+}
+
+#menu a {
+    display: block;
+
+    min-width: 150px;
+    height: 50px;
+
+    padding: 0 20px;
+
+    line-height: 50px;
+    text-align: center;
+
+    text-decoration: none;
+    color: white;
+
+    font-size: 16px;
+
+    background-color: #333;
+}
+
+
+/* ==========================================================
+   HOVER: DOI NEN SANG MAU DO
+========================================================== */
+
+#menu a:hover {
+    background-color: red;
+}
+
+
+/* ==========================================================
+   MENU CON - AN MAC DINH
+========================================================== */
+
+#menu ul ul {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    min-width: 180px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    z-index: 100;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* MENU CON HIEN THI THEO CHIEU DOC */
+
+#menu ul ul li {
+    display: block;
+}
+
+#menu ul ul a {
+    min-width: 180px;
+    text-align: left;
+    background-color: #444;
+}
+
+
+/* ==========================================================
+   HIEN THI MENU CON KHI HOVER
+========================================================== */
+
+#menu ul li:hover > ul,
+#menu ul li:focus-within > ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* ==========================================================
+   MAIN CONTENT
+========================================================== */
+
+main {
+    max-width: 850px;
+
+    margin: 40px auto;
+    padding: 25px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+main h2 {
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+main p {
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 600px) {
+
+    #menu > ul {
+        justify-content: flex-start;
+    }
+
+    #menu a {
+        min-width: 120px;
+        padding: 0 12px;
+        font-size: 14px;
+    }
+
+    main {
+        margin: 20px 15px;
+    }
+}
