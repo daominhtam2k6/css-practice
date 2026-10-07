@@ -1,0 +1,174 @@
+﻿/* THIET LAP CHUNG */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+
+    padding-top: 90px;
+    min-height: 1500px;
+}
+
+
+/* FIXED HEADER */
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    background-color: #333;
+    color: white;
+
+    padding: 15px 20px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    z-index: 1000;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.main-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main-header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-header nav a:hover {
+    color: #93c5fd;
+}
+
+
+/* BO CUC BA COT */
+
+.page-container {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 20px;
+    margin: 20px;
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+    background-color: white;
+    padding: 15px;
+
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+    flex-shrink: 0;
+}
+
+.left-sidebar,
+.right-sidebar {
+    width: 200px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.sidebar p {
+    line-height: 1.6;
+}
+
+
+/* NOI DUNG CHINH */
+
+.main-content {
+    background-color: white;
+    padding: 20px;
+
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.main-content section {
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-content h2 {
+    color: #1e40af;
+}
+
+.main-content p {
+    color: #444;
+    line-height: 1.8;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    body {
+        padding-top: 125px;
+    }
+
+    html {
+        scroll-padding-top: 125px;
+    }
+
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page-container {
+        flex-direction: column;
+    }
+
+    .left-sidebar,
+    .right-sidebar {
+        width: 100%;
+    }
+}
