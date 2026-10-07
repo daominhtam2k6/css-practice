@@ -1,0 +1,372 @@
+﻿/* ==========================================================
+   RESET
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #eef2f7;
+    color: #263247;
+}
+
+/* ==========================================================
+   MAIN
+========================================================== */
+
+#main {
+    width: 95%;
+    max-width: 1200px;
+
+    margin: 20px auto;
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+#header {
+    min-height: 110px;
+
+    padding: 25px;
+
+    background-color: #2563eb;
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header-text {
+    font-size: 20px;
+}
+
+/* ==========================================================
+   MENU
+========================================================== */
+
+#menu {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    background-color: #1e293b;
+}
+
+#menu a {
+    display: block;
+
+    padding: 15px 20px;
+
+    color: white;
+
+    text-decoration: none;
+}
+
+#menu a:hover {
+    background-color: #3b82f6;
+}
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+#container {
+    display: grid;
+
+    grid-template-columns:
+        200px minmax(0, 1fr) 200px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+/* ==========================================================
+   LEFT
+========================================================== */
+
+#left {
+    background-color: white;
+
+    padding: 20px;
+
+    border: 1px solid #dbe1ea;
+    border-radius: 6px;
+}
+
+#left h3 {
+    margin-bottom: 15px;
+
+    color: #1d4ed8;
+}
+
+#left ul {
+    list-style: none;
+}
+
+#left li {
+    margin-bottom: 8px;
+}
+
+#left a {
+    display: block;
+
+    padding: 10px;
+
+    color: #334155;
+
+    background-color: #f1f5f9;
+
+    text-decoration: none;
+
+    border-radius: 4px;
+}
+
+#left a:hover {
+    background-color: #dbeafe;
+
+    color: #1d4ed8;
+}
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+#content {
+    min-width: 0;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border: 1px solid #dbe1ea;
+    border-radius: 6px;
+}
+
+#content h1 {
+    margin-bottom: 15px;
+
+    color: #1e40af;
+}
+
+#content > p {
+    margin-bottom: 25px;
+
+    line-height: 1.7;
+
+    color: #64748b;
+}
+
+/* CARDS */
+
+.card-container {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+
+    min-width: 160px;
+
+    padding: 20px;
+
+    background-color: #eff6ff;
+
+    border: 1px solid #bfdbfe;
+
+    border-radius: 6px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+
+    color: #2563eb;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+/* ARTICLE */
+
+.article {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background-color: #f8fafc;
+
+    border-left: 5px solid #2563eb;
+}
+
+.article h2 {
+    margin-bottom: 12px;
+}
+
+.article p {
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+}
+
+/* ==========================================================
+   RIGHT
+========================================================== */
+
+#right {
+    background-color: white;
+
+    padding: 20px;
+
+    border: 1px solid #dbe1ea;
+    border-radius: 6px;
+}
+
+#right h3 {
+    margin-bottom: 15px;
+
+    color: #1d4ed8;
+}
+
+.info-box {
+    margin-bottom: 12px;
+
+    padding: 15px;
+
+    background-color: #f1f5f9;
+
+    border-radius: 5px;
+}
+
+.info-box strong {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #2563eb;
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+#footer {
+    margin-top: 20px;
+
+    padding: 25px;
+
+    background-color: #1e293b;
+    color: white;
+
+    text-align: center;
+}
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 900px) {
+
+    #container {
+        grid-template-columns:
+            180px minmax(0, 1fr);
+    }
+
+    #right {
+        grid-column: 1 / -1;
+    }
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 600px) {
+
+    #main {
+        width: 100%;
+
+        margin: 0;
+    }
+
+    #header {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 25px 15px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .header-text {
+        font-size: 16px;
+    }
+
+    #menu {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    #menu a {
+        border-bottom:
+            1px solid #475569;
+    }
+
+    #container {
+        display: block;
+
+        margin: 15px;
+    }
+
+    #left,
+    #content,
+    #right {
+        width: 100%;
+
+        margin-bottom: 15px;
+    }
+
+    #content {
+        padding: 18px;
+    }
+
+    #content h1 {
+        font-size: 24px;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    #footer {
+        margin-top: 0;
+    }
+}

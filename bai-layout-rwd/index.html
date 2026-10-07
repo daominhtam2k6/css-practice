@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Layout với RWD</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="main">
+
+        <!-- HEADER -->
+
+        <div id="header">
+
+            <div class="logo">
+                MyWebsite
+            </div>
+
+            <div class="header-text">
+                Responsive Web Design
+            </div>
+
+        </div>
+
+        <!-- MENU -->
+
+        <div id="menu">
+
+            <a href="#home">Trang chủ</a>
+            <a href="#about">Giới thiệu</a>
+            <a href="#services">Dịch vụ</a>
+            <a href="#news">Tin tức</a>
+            <a href="#contact">Liên hệ</a>
+
+        </div>
+
+        <!-- NOI DUNG -->
+
+        <div id="container">
+
+            <!-- LEFT SIDEBAR -->
+
+            <div id="left">
+
+                <h3>Danh mục</h3>
+
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Responsive</a></li>
+                </ul>
+
+            </div>
+
+            <!-- MAIN CONTENT -->
+
+            <div id="content">
+
+                <h1 id="home">
+                    Tạo layout với Responsive Web Design
+                </h1>
+
+                <p>
+                    Responsive Web Design giúp trang web
+                    tự động thay đổi bố cục để phù hợp
+                    với kích thước màn hình.
+                </p>
+
+                <div class="card-container">
+
+                    <div class="card" id="about">
+
+                        <h2>HTML</h2>
+
+                        <p>
+                            HTML được sử dụng để tạo
+                            cấu trúc cho trang web.
+                        </p>
+
+                    </div>
+
+                    <div class="card" id="services">
+
+                        <h2>CSS</h2>
+
+                        <p>
+                            CSS giúp định dạng giao diện
+                            và xây dựng bố cục responsive.
+                        </p>
+
+                    </div>
+
+                    <div class="card" id="news">
+
+                        <h2>RWD</h2>
+
+                        <p>
+                            Media Queries giúp thay đổi
+                            giao diện dựa trên kích thước
+                            màn hình thiết bị.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="article">
+
+                    <h2>Nội dung chính</h2>
+
+                    <p>
+                        Trên màn hình desktop, bố cục
+                        hiển thị sidebar trái, nội dung
+                        chính và sidebar phải trên
+                        cùng một hàng.
+                    </p>
+
+                    <p>
+                        Khi màn hình nhỏ hơn, các khu vực
+                        sẽ tự động thay đổi kích thước
+                        hoặc chuyển xuống hàng mới.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+
+            <div id="right">
+
+                <h3>Thông tin</h3>
+
+                <div class="info-box">
+                    Desktop
+                    <strong>3 cột</strong>
+                </div>
+
+                <div class="info-box">
+                    Tablet
+                    <strong>2 cột</strong>
+                </div>
+
+                <div class="info-box">
+                    Mobile
+                    <strong>1 cột</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+
+        <div id="footer">
+
+            <p id="contact">
+                © 2026 - Responsive Web Design Practice
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
