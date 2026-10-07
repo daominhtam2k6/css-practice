@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Grid Layout</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <h1>CSS Grid Layout</h1>
+
+            <p>
+                Thực hành xây dựng bố cục trang web bằng CSS Grid
+            </p>
+
+        </header>
+
+        <!-- SIDEBAR -->
+
+        <nav class="sidebar">
+
+            <h2>Sidebar</h2>
+
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#services">Dịch vụ</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- MAIN CONTENT -->
+
+        <main class="content" id="home">
+
+            <section id="about">
+
+                <h2>Nội dung chính</h2>
+
+                <p>
+                    Đây là khu vực nội dung chính của trang web.
+                    Phần này chiếm nhiều không gian hơn Sidebar.
+                </p>
+
+            </section>
+
+            <section id="services">
+
+                <h2>CSS Grid</h2>
+
+                <p>
+                    CSS Grid giúp chia bố cục trang web thành
+                    các hàng và cột một cách rõ ràng.
+                </p>
+
+                <p>
+                    Trong bài này, Sidebar chiếm 1 phần và
+                    Content chiếm 3 phần chiều rộng.
+                </p>
+
+            </section>
+
+            <div class="card-grid">
+
+                <article class="card">
+                    <h3>Grid Columns</h3>
+                    <p>
+                        Xác định kích thước các cột.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Grid Rows</h3>
+                    <p>
+                        Xác định kích thước các hàng.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Grid Areas</h3>
+                    <p>
+                        Đặt tên và sắp xếp các vùng.
+                    </p>
+                </article>
+
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+
+        <footer class="footer" id="contact">
+
+            <p>
+                © 2026 - CSS Grid Layout Practice
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
