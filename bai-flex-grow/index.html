@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CSS flex-grow Property</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>CSS flex-grow Property</h1>
+
+    <p class="intro">
+        Thuộc tính flex-grow xác định Flex Item
+        sẽ nhận thêm bao nhiêu phần không gian còn trống
+        so với các Flex Item khác.
+    </p>
+
+    <section>
+
+        <h2>Ví dụ: 5 Flex Item</h2>
+
+        <p class="code-note">
+            Item 1 → flex-grow: 1
+            Item 2 → flex-grow: 3
+            Item 3 → flex-grow: 1
+            Item 4 → flex-grow: 1
+            Item 5 → flex-grow: 1
+        </p>
+
+        <div class="container">
+
+            <div class="item item1">
+                Item 1
+                <span>grow: 1</span>
+            </div>
+
+            <div class="item item2">
+                Item 2
+                <span>grow: 3</span>
+            </div>
+
+            <div class="item item3">
+                Item 3
+                <span>grow: 1</span>
+            </div>
+
+            <div class="item item4">
+                Item 4
+                <span>grow: 1</span>
+            </div>
+
+            <div class="item item5">
+                Item 5
+                <span>grow: 1</span>
+            </div>
+
+        </div>
+
+        <p class="explanation">
+            Item 2 có flex-grow: 3 nên nhận phần không gian
+            trống nhiều hơn các Item còn lại có flex-grow: 1.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>So sánh khi tất cả đều bằng nhau</h2>
+
+        <p class="code-note">
+            flex-grow: 1;
+        </p>
+
+        <div class="container equal-grow">
+
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+
+        </div>
+
+        <p class="explanation">
+            Khi tất cả đều có flex-grow: 1,
+            phần không gian còn lại được chia đều.
+        </p>
+
+    </section>
+
+</body>
+
+</html>

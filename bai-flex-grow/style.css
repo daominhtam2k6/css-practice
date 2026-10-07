@@ -1,0 +1,183 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f6f8;
+    color: #263247;
+}
+
+h1 {
+    text-align: center;
+
+    color: #1d4ed8;
+
+    margin-bottom: 10px;
+}
+
+.intro {
+    max-width: 800px;
+
+    margin: 0 auto 30px;
+
+    text-align: center;
+
+    color: #64748b;
+
+    line-height: 1.7;
+}
+
+section {
+    max-width: 1000px;
+
+    margin: 0 auto 35px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border: 1px solid #dbe1ea;
+
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-top: 0;
+
+    color: #1e40af;
+}
+
+.code-note {
+    margin-bottom: 20px;
+
+    padding: 12px;
+
+    background-color: #eff6ff;
+
+    border-left: 4px solid #2563eb;
+
+    font-family: Consolas, monospace;
+
+    white-space: pre-line;
+}
+
+.explanation {
+    margin-top: 15px;
+
+    color: #64748b;
+
+    line-height: 1.7;
+}
+
+/* ==========================================================
+   FLEX CONTAINER
+========================================================== */
+
+.container {
+    display: flex;
+
+    width: 100%;
+
+    gap: 10px;
+
+    padding: 10px;
+
+    background-color: #e2e8f0;
+
+    border: 2px solid #334155;
+
+    border-radius: 6px;
+}
+
+/* ==========================================================
+   FLEX ITEMS
+========================================================== */
+
+.item {
+    flex-basis: 100px;
+
+    padding: 25px 10px;
+
+    background-color: lightblue;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    min-width: 0;
+}
+
+.item span {
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 13px;
+
+    font-weight: normal;
+}
+
+/* ==========================================================
+   FLEX-GROW
+========================================================== */
+
+.item1 {
+    flex-grow: 1;
+}
+
+.item2 {
+    flex-grow: 3;
+
+    background-color: lightcoral;
+}
+
+.item3 {
+    flex-grow: 1;
+}
+
+.item4 {
+    flex-grow: 1;
+}
+
+.item5 {
+    flex-grow: 1;
+}
+
+/* ==========================================================
+   VI DU SO SANH
+========================================================== */
+
+.equal-grow .item {
+    flex-grow: 1;
+
+    background-color: lightgreen;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .container {
+        overflow-x: auto;
+
+        min-width: 650px;
+    }
+
+}
