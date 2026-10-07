@@ -1,0 +1,147 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f6f8;
+    color: #263247;
+}
+
+h1 {
+    text-align: center;
+
+    color: #1d4ed8;
+
+    margin-bottom: 10px;
+}
+
+.intro {
+    max-width: 800px;
+
+    margin: 0 auto 30px;
+
+    text-align: center;
+
+    color: #64748b;
+
+    line-height: 1.7;
+}
+
+section {
+    max-width: 900px;
+
+    margin: 0 auto 35px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border: 1px solid #dbe1ea;
+
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-top: 0;
+
+    color: #1e40af;
+}
+
+.code-note {
+    margin-bottom: 20px;
+
+    padding: 12px;
+
+    background-color: #eff6ff;
+
+    border-left: 4px solid #2563eb;
+
+    font-family: Consolas, monospace;
+}
+
+.explanation {
+    margin-top: 15px;
+
+    color: #64748b;
+
+    line-height: 1.7;
+}
+
+/* DINH DANG CHUNG */
+
+.container {
+    display: flex;
+
+    min-height: 90px;
+
+    padding: 10px;
+
+    background-color: #f1f1f1;
+
+    border: 2px solid #64748b;
+
+    border-radius: 6px;
+}
+
+.container > div {
+    width: 100px;
+
+    margin: 10px;
+
+    color: white;
+
+    text-align: center;
+
+    line-height: 50px;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+}
+
+/* =========================================
+   VI DU 1
+========================================= */
+
+.container-1 {
+    flex-flow: row nowrap;
+}
+
+.container-1 > div {
+    background-color: #007bff;
+}
+
+/* =========================================
+   VI DU 2
+========================================= */
+
+.container-2 {
+    flex-flow: row-reverse nowrap;
+}
+
+.container-2 > div {
+    background-color: #28a745;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .container {
+        overflow-x: auto;
+    }
+
+}
