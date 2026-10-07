@@ -1,0 +1,154 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    padding: 30px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f6f8;
+
+    color: #263247;
+}
+
+h1 {
+    text-align: center;
+
+    color: #1d4ed8;
+
+    margin-bottom: 10px;
+}
+
+.intro {
+    max-width: 800px;
+
+    margin: 0 auto 30px;
+
+    text-align: center;
+
+    color: #64748b;
+
+    line-height: 1.7;
+}
+
+section {
+    max-width: 900px;
+
+    margin: 0 auto 35px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border: 1px solid #dbe1ea;
+
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-top: 0;
+
+    color: #1e40af;
+}
+
+.code-note {
+    margin-bottom: 20px;
+
+    padding: 12px;
+
+    background-color: #eff6ff;
+
+    border-left: 4px solid #2563eb;
+
+    font-family: Consolas, monospace;
+}
+
+.explanation {
+    margin-top: 15px;
+
+    color: #64748b;
+
+    line-height: 1.7;
+}
+
+/* ==========================================================
+   DINH DANG CHUNG
+========================================================== */
+
+.grid-container {
+    display: grid;
+
+    padding: 10px;
+
+    background-color: #e2e8f0;
+
+    border-radius: 6px;
+}
+
+.grid-container div {
+    padding: 20px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+}
+
+/* ==========================================================
+   VI DU 1
+   2 COT - GAP 20PX CHO CA HANG VA COT
+========================================================== */
+
+.example-1 {
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    grid-gap: 20px;
+}
+
+.example-1 div {
+    background-color: lightblue;
+}
+
+/* ==========================================================
+   VI DU 2
+   3 COT
+   ROW GAP = 30PX
+   COLUMN GAP = 10PX
+========================================================== */
+
+.example-2 {
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    grid-gap: 30px 10px;
+}
+
+.example-2 div {
+    background-color: lightgreen;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .example-1,
+    .example-2 {
+        grid-template-columns: 1fr;
+    }
+
+}
