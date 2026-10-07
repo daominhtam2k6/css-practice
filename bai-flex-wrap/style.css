@@ -1,0 +1,186 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    padding: 30px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f6f8;
+
+    color: #263247;
+}
+
+h1 {
+    text-align: center;
+
+    color: #1d4ed8;
+
+    margin-bottom: 10px;
+}
+
+.intro {
+    max-width: 800px;
+
+    margin: 0 auto 30px;
+
+    text-align: center;
+
+    color: #64748b;
+
+    line-height: 1.7;
+}
+
+section {
+    max-width: 900px;
+
+    margin: 0 auto 35px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border: 1px solid #dbe1ea;
+
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-top: 0;
+
+    color: #1e40af;
+}
+
+.code-note {
+    margin-bottom: 20px;
+
+    padding: 12px;
+
+    background-color: #eff6ff;
+
+    border-left: 4px solid #2563eb;
+
+    font-family: Consolas, monospace;
+}
+
+.explanation {
+    margin-top: 15px;
+
+    color: #64748b;
+
+    line-height: 1.7;
+}
+
+/* ==========================================================
+   FLEX CONTAINER CHUNG
+========================================================== */
+
+.container {
+    display: flex;
+
+    width: 600px;
+
+    min-height: 220px;
+
+    gap: 10px;
+
+    padding: 10px;
+
+    border: 2px solid #111827;
+
+    background-color: #e2e8f0;
+
+    overflow: auto;
+}
+
+.item {
+    width: 180px;
+
+    height: 80px;
+
+    padding: 20px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+}
+
+/* ==========================================================
+   NOWRAP
+========================================================== */
+
+.nowrap-example {
+    flex-wrap: nowrap;
+}
+
+.nowrap-example .item {
+    background-color: lightgreen;
+}
+
+/* ==========================================================
+   WRAP
+========================================================== */
+
+.wrap-example {
+    flex-wrap: wrap;
+}
+
+.wrap-example .item {
+    background-color: lightblue;
+}
+
+/* ==========================================================
+   WRAP-REVERSE
+========================================================== */
+
+.wrap-reverse-example {
+    flex-wrap: wrap-reverse;
+}
+
+.wrap-reverse-example .item {
+    background-color: lightcoral;
+}
+
+/* ==========================================================
+   INITIAL
+========================================================== */
+
+.initial-example {
+    flex-wrap: initial;
+}
+
+.initial-example .item {
+    background-color: lightyellow;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+}
