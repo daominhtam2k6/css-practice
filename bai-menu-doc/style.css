@@ -1,0 +1,121 @@
+﻿/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    padding: 30px;
+}
+
+h1 {
+    color: #1e40af;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 25px;
+    color: #444;
+}
+
+
+/* MENU CHINH */
+
+#menu {
+    width: 160px;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* DINH DANG LI */
+
+#menu li {
+    list-style: none;
+
+    position: relative;
+
+    width: 160px;
+    height: 30px;
+
+    background-color: black;
+
+    line-height: 30px;
+
+    cursor: pointer;
+}
+
+
+/* DINH DANG LIEN KET */
+
+#menu a {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 0 20px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+
+/* DOI MAU KHI HOVER */
+
+#menu li:hover {
+    background-color: #2563eb;
+}
+
+
+/* AN MENU CON MAC DINH */
+
+#menu li > ul {
+    position: absolute;
+
+    top: 0;
+    left: 160px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity 0.15s ease;
+}
+
+
+/* HIEN THI MENU CON KHI HOVER */
+
+#menu li:hover > ul,
+#menu li:focus-within > ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* DUONG VIEN PHAN CACH */
+
+#menu li {
+    border-bottom: 1px solid #444;
+}
+
+
+/* MENU CON */
+
+#menu li ul li {
+    background-color: #222;
+}
+
+#menu li ul li:hover {
+    background-color: #1d4ed8;
+}
