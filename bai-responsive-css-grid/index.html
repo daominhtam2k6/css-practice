@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive CSS Grid Layout</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page-grid">
+
+        <!-- HEADER -->
+        <header class="header">
+            <h1>Responsive CSS Grid</h1>
+            <p>Bố cục trang web hiển thị tốt trên desktop và mobile</p>
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav class="nav">
+            <a href="#home">Trang chủ</a>
+            <a href="#about">Giới thiệu</a>
+            <a href="#news">Tin tức</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content" id="home">
+
+            <section id="about">
+                <h2>Nội dung chính</h2>
+
+                <p>
+                    Đây là khu vực hiển thị nội dung chính
+                    của trang web.
+                </p>
+
+                <p>
+                    Trên desktop, nội dung chính nằm cạnh sidebar.
+                    Trên mobile, các phần tử sẽ xếp dọc.
+                </p>
+            </section>
+
+            <section id="news">
+
+                <h2>Tin tức</h2>
+
+                <div class="card-grid">
+
+                    <article class="card">
+                        <h3>Bài viết 1</h3>
+                        <p>
+                            CSS Grid giúp tạo bố cục
+                            theo hàng và cột rất linh hoạt.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Bài viết 2</h3>
+                        <p>
+                            Media Queries giúp bố cục
+                            tự thay đổi theo kích thước màn hình.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Bài viết 3</h3>
+                        <p>
+                            Responsive Design giúp website
+                            hiển thị tốt trên nhiều thiết bị.
+                        </p>
+                    </article>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h2>Sidebar</h2>
+
+            <div class="sidebar-box">
+                <h3>Tin nổi bật</h3>
+                <p>Học CSS Grid từ cơ bản đến responsive.</p>
+            </div>
+
+            <div class="sidebar-box">
+                <h3>Danh mục</h3>
+
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Grid</li>
+                    <li>Responsive</li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <!-- FOOTER -->
+        <footer class="footer" id="contact">
+            <p>© 2026 - Responsive CSS Grid Practice</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

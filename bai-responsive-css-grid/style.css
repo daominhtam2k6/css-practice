@@ -1,0 +1,286 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #263247;
+}
+
+/* ==========================================================
+   GRID CHINH - DESKTOP
+========================================================== */
+
+.page-grid {
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 3fr)
+        minmax(220px, 1fr);
+
+    grid-template-rows:
+        auto
+        auto
+        1fr
+        auto;
+
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main sidebar"
+        "footer footer";
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.header {
+    grid-area: header;
+
+    padding: 30px 20px;
+
+    background-color: #1e3a8a;
+    color: white;
+
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+/* ==========================================================
+   NAVIGATION
+========================================================== */
+
+.nav {
+    grid-area: nav;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background-color: #1e293b;
+}
+
+.nav a {
+    display: block;
+
+    padding: 15px 22px;
+
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #2563eb;
+}
+
+/* ==========================================================
+   MAIN CONTENT
+========================================================== */
+
+.main-content {
+    grid-area: main;
+
+    padding: 30px;
+
+    background-color: white;
+}
+
+.main-content section {
+    margin-bottom: 30px;
+}
+
+.main-content h2 {
+    margin-bottom: 12px;
+
+    color: #1d4ed8;
+}
+
+.main-content p {
+    line-height: 1.7;
+
+    color: #64748b;
+
+    margin-bottom: 10px;
+}
+
+/* ==========================================================
+   CARD GRID
+========================================================== */
+
+.card-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+.card {
+    padding: 20px;
+
+    background-color: #eff6ff;
+
+    border: 1px solid #bfdbfe;
+
+    border-radius: 7px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+
+    color: #1e40af;
+}
+
+/* ==========================================================
+   SIDEBAR
+========================================================== */
+
+.sidebar {
+    grid-area: sidebar;
+
+    padding: 25px;
+
+    background-color: #e2e8f0;
+
+    border-left: 1px solid #cbd5e1;
+}
+
+.sidebar h2 {
+    margin-bottom: 15px;
+
+    color: #1d4ed8;
+}
+
+.sidebar-box {
+    margin-bottom: 20px;
+
+    padding: 16px;
+
+    background-color: white;
+
+    border-radius: 6px;
+}
+
+.sidebar-box h3 {
+    margin-bottom: 10px;
+}
+
+.sidebar-box p,
+.sidebar-box li {
+    line-height: 1.7;
+
+    color: #475569;
+}
+
+.sidebar-box ul {
+    padding-left: 20px;
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.footer {
+    grid-area: footer;
+
+    padding: 22px;
+
+    background-color: #1e293b;
+    color: white;
+
+    text-align: center;
+}
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 900px) {
+
+    .card-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .page-grid {
+        grid-template-columns: 1fr;
+
+        grid-template-rows:
+            auto
+            auto
+            auto
+            auto
+            auto;
+
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "sidebar"
+            "footer";
+    }
+
+    .sidebar {
+        border-left: none;
+
+        border-top: 1px solid #cbd5e1;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ==========================================================
+   MOBILE NHO
+========================================================== */
+
+@media (max-width: 480px) {
+
+    .header {
+        padding: 25px 15px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .nav {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .nav a {
+        border-bottom: 1px solid #475569;
+    }
+
+    .main-content,
+    .sidebar {
+        padding: 20px 15px;
+    }
+
+}
