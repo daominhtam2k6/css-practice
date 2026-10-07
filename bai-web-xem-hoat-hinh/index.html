@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cartoon World - Xem hoạt hình</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="#home" class="logo">🎬 Cartoon World</a>
+
+            <span class="header-label">
+                Thế giới hoạt hình vui nhộn
+            </span>
+        </div>
+    </header>
+
+    <!-- HEAD LINK -->
+    <nav class="head-link" aria-label="Điều hướng">
+        <a href="#home">Trang chủ</a>
+        <a href="#movies">Danh sách phim</a>
+        <a href="#player">Xem phim</a>
+        <a href="#footer">Liên hệ</a>
+    </nav>
+
+    <!-- MAIN -->
+    <main id="home">
+
+        <div class="intro">
+            <h1>Thế giới phim hoạt hình</h1>
+            <p>
+                Khám phá các video hoạt hình mẫu
+                với giao diện đơn giản, dễ sử dụng.
+            </p>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="content">
+
+            <!-- LEFT CONTENT -->
+            <aside class="left-content" id="movies">
+
+                <h2>Danh sách phim</h2>
+
+                <label for="search" class="sr-only">
+                    Tìm kiếm phim
+                </label>
+
+                <input
+                    type="search"
+                    id="search"
+                    placeholder="Tìm kiếm phim..."
+                >
+
+                <label for="sort" class="sort-label">
+                    Sắp xếp:
+                </label>
+
+                <select id="sort">
+                    <option value="newest">
+                        Mới cập nhật
+                    </option>
+                    <option value="popular">
+                        Nhiều lượt xem nhất
+                    </option>
+                </select>
+
+                <div id="movie-list" class="movie-list"></div>
+
+                <p id="empty-message" hidden>
+                    Không tìm thấy phim phù hợp.
+                </p>
+
+            </aside>
+
+            <!-- RIGHT CONTENT -->
+            <section class="right-content" id="player">
+
+                <div class="player-top">
+                    <span class="category">HOẠT HÌNH</span>
+                    <span class="quality">HD 720p · Video mẫu</span>
+                </div>
+
+                <h2 id="movie-title">Big Buck Bunny</h2>
+
+                <div class="video-wrapper" id="video-container">
+                    <video controls playsinline preload="metadata">
+                        <source
+                            src="https://uploads.video-commander.com/sample/BigBuckBunny.mp4"
+                            type="video/mp4"
+                        >
+                        Trình duyệt không hỗ trợ video HTML5.
+                    </video>
+                </div>
+
+                <div class="movie-information">
+                    <h3>Thông tin phim</h3>
+
+                    <p id="movie-description">
+                        Phim hoạt hình mẫu Big Buck Bunny.
+                    </p>
+
+                    <p class="notice">
+                        Đây là website thực hành. Video mẫu
+                        không có bảo đảm về thuyết minh tiếng Việt.
+                    </p>
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <p>© 2026 Cartoon World - Dự án học HTML & CSS</p>
+        <p>Không chèn banner quảng cáo trên giao diện.</p>
+    </footer>
+
+</body>
+</html>
